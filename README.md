@@ -280,6 +280,9 @@ Both pipelines aim to return a canonical structure:
     }
   ]
 }
+```
 
+## Master Thesis
 
-## This project is my master thesis. I have attached my report which awarded me a 1.3 at TU Munich (in the german grade system, a 1 is the best grade, and a 1.3 is the second best grade).
+This project is my master thesis. I have attached my report which awarded me a 1.3 at TU Munich (in the german grade system, a 1 is the best grade, and a 1.3 is the second best grade).
+The slides for the master thesis defense are also in this repo.
