@@ -1,0 +1,64 @@
+# Core scientific stack
+numpy
+scipy
+pandas
+matplotlib
+scikit-image
+scikit-learn
+
+# Computer vision
+opencv-python-headless
+
+# OCR
+easyocr
+
+# Deep learning
+torch
+torchvision
+gpytorch
+transformers
+accelerate
+
+# Plotting / visualization
+seaborn
+plotly
+plotnine==0.15.0a1
+matplotlib-inline
+kaleido<1.0.0
+
+# Survival / stats
+lifelines
+scikit-survival
+bayesian-optimization==2.0.4
+
+# Optimization
+modal-python
+
+# LLM APIs
+openai>=1.12
+google-genai
+
+# Utilities
+python-dotenv
+deepdiff
+odfpy
+openpyxl
+python-calamine
+timedelta-isoformat
+
+# SBML / systems biology
+python-libsbml
+libroadrunner
+
+# Git dependency
+ndtest @ git+https://github.com/syrte/ndtest.git
+
+# Jupyter stack (optional but used in your pyproject)
+ipykernel
+jupyter
+jupyter-server
+jupyterlab
+black[jupyter]
+
+# System monitoring
+psutil

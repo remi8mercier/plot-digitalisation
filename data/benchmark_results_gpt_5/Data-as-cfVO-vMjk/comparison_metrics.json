@@ -1,0 +1,32 @@
+{
+  "pairs": [
+    {
+      "model_label": "series_1",
+      "real_label": "Default Dataset",
+      "compare_mode": "interp",
+      "points_compared": 7,
+      "mae": 5.165215305874367,
+      "nmae": 0.03597504940686997,
+      "bias": 0.14001206321353774,
+      "pearson_r": 0.9924031504931892,
+      "ks": 12.042392632376156,
+      "integral_l1": 54.649518999058095,
+      "x_overlap_ratio": 0.9981751206905365,
+      "x_misaligned": false,
+      "excluded": {}
+    }
+  ],
+  "unmatched_model_series": [],
+  "unmatched_real_series": [],
+  "overall_nmae": 0.03597504940686997,
+  "overall_ks": 12.042392632376156,
+  "overall_integral_l1": 54.649518999058095,
+  "overall_x_misaligned": false,
+  "ks_scaled_by_gt_max": 0.07143525940609836,
+  "l1_scaled_by_gt_max": 0.3241799769607673,
+  "ks_scaled_by_gt_yrange": 0.08480149910593127,
+  "l1_scaled_by_gt_yrange": 0.3848372394102687,
+  "model_series_count": 1,
+  "gt_series_count": 1,
+  "notes": "mae = mean absolute y-error on overlapping x-range; nmae = mae / (ymax - ymin); bias = mean(model - gt); pearson_r = correlation of interpolated curves; ks = max |model(x) - gt(x)|; integral_l1 = \u222b |model(x) - gt(x)| dx over overlap; x_overlap_ratio = overlap length / union length; x_misaligned = True when overlap too small to trust comparison."
+}

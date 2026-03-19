@@ -1,0 +1,20 @@
+{
+  "pairs": [],
+  "unmatched_model_series": [
+    "CR",
+    "PR",
+    "NR"
+  ],
+  "unmatched_real_series": [
+    "CompletePsaResponseM7",
+    "PartialPsaResponseM7",
+    "NoPsaResponseM7"
+  ],
+  "overall_nmae": NaN,
+  "overall_ks": NaN,
+  "overall_integral_l1": NaN,
+  "overall_x_misaligned": true,
+  "model_series_count": 3,
+  "gt_series_count": 3,
+  "notes": "No feasible assignment between model and GT series."
+}

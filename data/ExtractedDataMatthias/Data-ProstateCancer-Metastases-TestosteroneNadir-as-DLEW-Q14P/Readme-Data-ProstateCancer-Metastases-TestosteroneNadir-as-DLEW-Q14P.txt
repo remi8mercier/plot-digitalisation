@@ -1,0 +1,1 @@
+Cumulative incidence curves for metastasis stratified by subcastrate testosterone nadir (<20 ng/dL in red, 20-49 ng/dL in blue)

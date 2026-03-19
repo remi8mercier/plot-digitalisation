@@ -1,0 +1,1 @@
+Metastasis-free survival in prostate cancer after Radiation with Androgen Deprivation Therapy, stratified by PSA at six months after treatment 

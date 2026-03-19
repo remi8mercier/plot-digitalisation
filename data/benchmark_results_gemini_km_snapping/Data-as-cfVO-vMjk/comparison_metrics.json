@@ -1,0 +1,32 @@
+{
+  "pairs": [
+    {
+      "model_label": "CFUeo/10^-6 bone marrow cells",
+      "real_label": "Default Dataset",
+      "compare_mode": "interp",
+      "points_compared": 6,
+      "mae": 0.9618347709569969,
+      "nmae": 0.006754185468063585,
+      "bias": 0.2886836311903469,
+      "pearson_r": 0.999802919460942,
+      "ks": 2.01945341929995,
+      "integral_l1": 6.873536473843785,
+      "x_overlap_ratio": 0.9981751206905365,
+      "x_misaligned": false,
+      "excluded": {}
+    }
+  ],
+  "unmatched_model_series": [],
+  "unmatched_real_series": [],
+  "overall_nmae": 0.006754185468063585,
+  "overall_ks": 2.01945341929995,
+  "overall_integral_l1": 6.873536473843785,
+  "overall_x_misaligned": false,
+  "ks_scaled_by_gt_max": 0.011979361848606276,
+  "l1_scaled_by_gt_max": 0.04077369639370617,
+  "ks_scaled_by_gt_yrange": 0.014220818284135588,
+  "l1_scaled_by_gt_yrange": 0.0482672716433916,
+  "model_series_count": 1,
+  "gt_series_count": 1,
+  "notes": "mae = mean absolute y-error on overlapping x-range; nmae = mae / (ymax - ymin); bias = mean(model - gt); pearson_r = correlation of interpolated curves; ks = max |model(x) - gt(x)|; integral_l1 = \u222b |model(x) - gt(x)| dx over overlap; x_overlap_ratio = overlap length / union length; x_misaligned = True when overlap too small to trust comparison."
+}

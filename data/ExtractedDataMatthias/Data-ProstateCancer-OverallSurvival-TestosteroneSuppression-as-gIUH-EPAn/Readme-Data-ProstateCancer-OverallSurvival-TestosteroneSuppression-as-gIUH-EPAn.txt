@@ -1,0 +1,1 @@
+Kaplan–Meier plots of overall survival in prostate cancer by testosterone suppression group

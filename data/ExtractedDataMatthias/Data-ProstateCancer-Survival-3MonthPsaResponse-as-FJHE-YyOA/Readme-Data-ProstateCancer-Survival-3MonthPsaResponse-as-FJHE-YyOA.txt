@@ -1,0 +1,1 @@
+Overall survival of prostate cancer patients stratified by their PSA response after 3 months (CR: Complete Response with PSA <= 0.2 ng/ml, PR: Partial response with 0.2 ng/ml < PSA <=4 ng/ml, NR: No response)

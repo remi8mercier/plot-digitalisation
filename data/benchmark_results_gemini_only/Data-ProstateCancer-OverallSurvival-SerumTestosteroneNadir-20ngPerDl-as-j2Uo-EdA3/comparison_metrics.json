@@ -1,0 +1,47 @@
+{
+  "pairs": [
+    {
+      "model_label": "< 20ng/dL",
+      "real_label": "Testosterone<20",
+      "compare_mode": "interp",
+      "points_compared": 28,
+      "mae": 0.026271140838602443,
+      "nmae": 0.026271140838602443,
+      "bias": -0.007338709450142371,
+      "pearson_r": 0.9781994288285357,
+      "ks": 0.2800620380321597,
+      "integral_l1": 2.391034552339829,
+      "x_overlap_ratio": 0.9868421052631579,
+      "x_misaligned": false,
+      "excluded": {}
+    },
+    {
+      "model_label": ">= 20ng/dL",
+      "real_label": "Testosterone>=20",
+      "compare_mode": "interp",
+      "points_compared": 17,
+      "mae": 0.01905054011395703,
+      "nmae": 0.0483881291530121,
+      "bias": -0.014044510431624684,
+      "pearson_r": 0.9896715430413648,
+      "ks": 0.05478332288026955,
+      "integral_l1": 0.7711085652439126,
+      "x_overlap_ratio": 0.9772727272727273,
+      "x_misaligned": false,
+      "excluded": {}
+    }
+  ],
+  "unmatched_model_series": [],
+  "unmatched_real_series": [],
+  "overall_nmae": 0.03732963499580727,
+  "overall_ks": 0.1674226804562146,
+  "overall_integral_l1": 1.5810715587918707,
+  "overall_x_misaligned": false,
+  "ks_scaled_by_gt_max": 0.16973254931997006,
+  "l1_scaled_by_gt_max": 1.6009670592977159,
+  "ks_scaled_by_gt_yrange": 0.26524662663987814,
+  "l1_scaled_by_gt_yrange": 2.1748202414092037,
+  "model_series_count": 2,
+  "gt_series_count": 2,
+  "notes": "mae = mean absolute y-error on overlapping x-range; nmae = mae / (ymax - ymin); bias = mean(model - gt); pearson_r = correlation of interpolated curves; ks = max |model(x) - gt(x)|; integral_l1 = \u222b |model(x) - gt(x)| dx over overlap; x_overlap_ratio = overlap length / union length; x_misaligned = True when overlap too small to trust comparison."
+}

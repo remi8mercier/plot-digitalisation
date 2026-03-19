@@ -1,0 +1,84 @@
+{
+  "pairs": [
+    {
+      "model_label": "Serum testosterone levels < 20 ng/dL",
+      "real_label": "Testosterone<20",
+      "compare_mode": "interp",
+      "points_compared": 5,
+      "mae": 0.009802826161000366,
+      "nmae": 0.8858382509945971,
+      "bias": -0.009802826161000366,
+      "pearson_r": NaN,
+      "ks": 0.011066158127619796,
+      "integral_l1": 1.1497030962698993,
+      "x_overlap_ratio": 0.8161583169748661,
+      "x_misaligned": false,
+      "excluded": {
+        "model_left": [],
+        "model_right": [
+          5,
+          6
+        ],
+        "model_nan": [],
+        "real_outside_overlap": 2
+      }
+    },
+    {
+      "model_label": "Serum testosterone levels 20\u201350 ng/dL",
+      "real_label": "Testosterone>50",
+      "compare_mode": "interp",
+      "points_compared": 17,
+      "mae": 0.03755717162169668,
+      "nmae": 0.039040718941472645,
+      "bias": -0.018985452145295106,
+      "pearson_r": 0.964923998908026,
+      "ks": 0.29903668416800705,
+      "integral_l1": 4.2992058012851535,
+      "x_overlap_ratio": 0.8336309523809523,
+      "x_misaligned": false,
+      "excluded": {
+        "model_left": [],
+        "model_right": [],
+        "model_nan": [],
+        "real_outside_overlap": 15
+      }
+    },
+    {
+      "model_label": "Serum testosterone levels > 50 ng/dL",
+      "real_label": "Testosterone20-50",
+      "compare_mode": "interp",
+      "points_compared": 11,
+      "mae": 0.0395048725990376,
+      "nmae": 0.06839605090652773,
+      "bias": -0.03627560354718425,
+      "pearson_r": 0.9856751666467399,
+      "ks": 0.08771900787462894,
+      "integral_l1": 2.9484807877744026,
+      "x_overlap_ratio": 0.621934770217113,
+      "x_misaligned": false,
+      "excluded": {
+        "model_left": [],
+        "model_right": [
+          11,
+          12,
+          13
+        ],
+        "model_nan": [],
+        "real_outside_overlap": 14
+      }
+    }
+  ],
+  "unmatched_model_series": [],
+  "unmatched_real_series": [],
+  "overall_nmae": 0.33109167361419917,
+  "overall_ks": 0.13260728339008526,
+  "overall_integral_l1": 2.7991298951098185,
+  "overall_x_misaligned": false,
+  "ks_scaled_by_gt_max": 0.13788654510069334,
+  "l1_scaled_by_gt_max": 2.899284380419079,
+  "ks_scaled_by_gt_yrange": 0.8825869138572323,
+  "l1_scaled_by_gt_yrange": 75.48214560934647,
+  "model_series_count": 3,
+  "gt_series_count": 3,
+  "notes": "mae = mean absolute y-error on overlapping x-range; nmae = mae / (ymax - ymin); bias = mean(model - gt); pearson_r = correlation of interpolated curves; ks = max |model(x) - gt(x)|; integral_l1 = \u222b |model(x) - gt(x)| dx over overlap; x_overlap_ratio = overlap length / union length; x_misaligned = True when overlap too small to trust comparison."
+}

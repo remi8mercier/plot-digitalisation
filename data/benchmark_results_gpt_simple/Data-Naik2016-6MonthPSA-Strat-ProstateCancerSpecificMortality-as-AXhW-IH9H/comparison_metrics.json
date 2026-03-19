@@ -1,0 +1,57 @@
+{
+  "pairs": [
+    {
+      "model_label": "PSA >0.1 ng/mL (n=222)",
+      "real_label": "PSA>0.1",
+      "compare_mode": "interp",
+      "points_compared": 17,
+      "mae": 0.9720681634614801,
+      "nmae": 0.03811290941799268,
+      "bias": 0.971121647766002,
+      "pearson_r": 0.9982619819365037,
+      "ks": 2.168130761077391,
+      "integral_l1": 15.994888825793499,
+      "x_overlap_ratio": 0.9846153846153847,
+      "x_misaligned": false,
+      "excluded": {
+        "model_left": [],
+        "model_right": [],
+        "model_nan": [],
+        "real_outside_overlap": 1
+      }
+    },
+    {
+      "model_label": "PSA \u22640.1 ng/mL (n=310)",
+      "real_label": "PSA<0.1",
+      "compare_mode": "interp",
+      "points_compared": 17,
+      "mae": 0.9153577726159511,
+      "nmae": 0.10390478569833639,
+      "bias": 0.8949545690810181,
+      "pearson_r": 0.994629294980821,
+      "ks": 1.6129443739805946,
+      "integral_l1": 14.667896332457406,
+      "x_overlap_ratio": 0.9846153846153847,
+      "x_misaligned": false,
+      "excluded": {
+        "model_left": [],
+        "model_right": [],
+        "model_nan": [],
+        "real_outside_overlap": 1
+      }
+    }
+  ],
+  "unmatched_model_series": [],
+  "unmatched_real_series": [],
+  "overall_nmae": 0.07100884755816453,
+  "overall_ks": 1.8905375675289928,
+  "overall_integral_l1": 15.331392579125453,
+  "overall_x_misaligned": false,
+  "ks_scaled_by_gt_max": 0.15339591979388886,
+  "l1_scaled_by_gt_max": 1.320056765679701,
+  "ks_scaled_by_gt_yrange": 0.15342303473095076,
+  "l1_scaled_by_gt_yrange": 1.3200136392015511,
+  "model_series_count": 2,
+  "gt_series_count": 2,
+  "notes": "mae = mean absolute y-error on overlapping x-range; nmae = mae / (ymax - ymin); bias = mean(model - gt); pearson_r = correlation of interpolated curves; ks = max |model(x) - gt(x)|; integral_l1 = \u222b |model(x) - gt(x)| dx over overlap; x_overlap_ratio = overlap length / union length; x_misaligned = True when overlap too small to trust comparison."
+}

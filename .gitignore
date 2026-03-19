@@ -1,0 +1,9 @@
+.env
+__pycache__/*
+extracted_points.*
+legacy/*
+demo_folder/*
+out_interval/*
+example_thesis/*
+jinko_pipeline/*
+extracted_plots/*

@@ -1,0 +1,61 @@
+{
+  "pairs": [
+    {
+      "model_label": "Testosterone nadir < 20 ng/dL",
+      "real_label": "Testosterone<20",
+      "compare_mode": "interp",
+      "points_compared": 54,
+      "mae": 0.006207341635432707,
+      "nmae": 0.03194358841613627,
+      "bias": 0.00038227233919948405,
+      "pearson_r": 0.9957022078785914,
+      "ks": 0.01786021774341026,
+      "integral_l1": 0.05557835192798415,
+      "x_overlap_ratio": 0.8937363420487805,
+      "x_misaligned": false,
+      "excluded": {
+        "model_left": [
+          0,
+          1,
+          2
+        ],
+        "model_right": [],
+        "model_nan": [],
+        "real_outside_overlap": 2
+      }
+    },
+    {
+      "model_label": "Testosterone nadir 20 \u2013 49 ng/dL",
+      "real_label": "Testosterone20-50",
+      "compare_mode": "interp",
+      "points_compared": 56,
+      "mae": 0.00554751885232909,
+      "nmae": 0.01786493539117461,
+      "bias": 0.003728112114877863,
+      "pearson_r": 0.9946181639837807,
+      "ks": 0.04039968184493972,
+      "integral_l1": 0.05071310699770925,
+      "x_overlap_ratio": 0.9669070737560975,
+      "x_misaligned": false,
+      "excluded": {
+        "model_left": [],
+        "model_right": [],
+        "model_nan": [],
+        "real_outside_overlap": 2
+      }
+    }
+  ],
+  "unmatched_model_series": [],
+  "unmatched_real_series": [],
+  "overall_nmae": 0.02490426190365544,
+  "overall_ks": 0.029129949794174992,
+  "overall_integral_l1": 0.0531457294628467,
+  "overall_x_misaligned": false,
+  "ks_scaled_by_gt_max": 0.12048383933960555,
+  "l1_scaled_by_gt_max": 0.24156573366322087,
+  "ks_scaled_by_gt_yrange": 0.11166128840788356,
+  "l1_scaled_by_gt_yrange": 0.22513866734041302,
+  "model_series_count": 2,
+  "gt_series_count": 2,
+  "notes": "mae = mean absolute y-error on overlapping x-range; nmae = mae / (ymax - ymin); bias = mean(model - gt); pearson_r = correlation of interpolated curves; ks = max |model(x) - gt(x)|; integral_l1 = \u222b |model(x) - gt(x)| dx over overlap; x_overlap_ratio = overlap length / union length; x_misaligned = True when overlap too small to trust comparison."
+}

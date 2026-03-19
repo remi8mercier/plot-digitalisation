@@ -1,0 +1,47 @@
+{
+  "pairs": [
+    {
+      "model_label": "placebo",
+      "real_label": "placebo",
+      "compare_mode": "interp",
+      "points_compared": 8,
+      "mae": 0.0024633031446087417,
+      "nmae": 0.005728611964206374,
+      "bias": 0.0021701109120535467,
+      "pearson_r": 0.9999199106684002,
+      "ks": 0.006641129286363512,
+      "integral_l1": 1.6667151306727979,
+      "x_overlap_ratio": 1.0,
+      "x_misaligned": false,
+      "excluded": {}
+    },
+    {
+      "model_label": "salbutamol",
+      "real_label": "salbutamol",
+      "compare_mode": "interp",
+      "points_compared": 8,
+      "mae": 0.0036170765851329945,
+      "nmae": 0.006459065330594632,
+      "bias": 0.0023275214036855285,
+      "pearson_r": 0.9998334713202086,
+      "ks": 0.013143168375659986,
+      "integral_l1": 2.859940672854324,
+      "x_overlap_ratio": 1.0,
+      "x_misaligned": false,
+      "excluded": {}
+    }
+  ],
+  "unmatched_model_series": [],
+  "unmatched_real_series": [],
+  "overall_nmae": 0.006093838647400504,
+  "overall_ks": 0.009892148831011749,
+  "overall_integral_l1": 2.263327901763561,
+  "overall_x_misaligned": false,
+  "ks_scaled_by_gt_max": 0.003376811338724689,
+  "l1_scaled_by_gt_max": 0.7717475685632949,
+  "ks_scaled_by_gt_yrange": 0.019663675833972986,
+  "l1_scaled_by_gt_yrange": 4.491559307525177,
+  "model_series_count": 2,
+  "gt_series_count": 2,
+  "notes": "mae = mean absolute y-error on overlapping x-range; nmae = mae / (ymax - ymin); bias = mean(model - gt); pearson_r = correlation of interpolated curves; ks = max |model(x) - gt(x)|; integral_l1 = \u222b |model(x) - gt(x)| dx over overlap; x_overlap_ratio = overlap length / union length; x_misaligned = True when overlap too small to trust comparison."
+}

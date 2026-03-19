@@ -1,0 +1,62 @@
+{
+  "pairs": [
+    {
+      "model_label": "Serum testosterone levels < 20 ng/dL",
+      "real_label": "Testosterone<20",
+      "compare_mode": "interp",
+      "points_compared": 4,
+      "mae": 0.045271743916949436,
+      "nmae": 0.1509058130564981,
+      "bias": 0.008259571672379895,
+      "pearson_r": 0.9154201742495462,
+      "ks": 0.06433282186663325,
+      "integral_l1": 0.8471849290146148,
+      "x_overlap_ratio": 0.965034965034965,
+      "x_misaligned": false,
+      "excluded": {}
+    },
+    {
+      "model_label": "Serum testosterone levels 20\u201350 ng/dL",
+      "real_label": "Testosterone20-50",
+      "compare_mode": "interp",
+      "points_compared": 18,
+      "mae": 0.04371231346747005,
+      "nmae": 0.0512867981259306,
+      "bias": 0.03996122712643825,
+      "pearson_r": 0.9883156323611917,
+      "ks": 0.11095488189070513,
+      "integral_l1": 4.153587182555621,
+      "x_overlap_ratio": 0.9808102345415779,
+      "x_misaligned": false,
+      "excluded": {}
+    },
+    {
+      "model_label": "Serum testosterone levels > 50 ng/dL",
+      "real_label": "Testosterone>50",
+      "compare_mode": "interp",
+      "points_compared": 19,
+      "mae": 0.05047308160669266,
+      "nmae": 0.06155253854474714,
+      "bias": 0.025099172607447776,
+      "pearson_r": 0.9864748507355727,
+      "ks": 0.14472603925595273,
+      "integral_l1": 0.8453199075083085,
+      "x_overlap_ratio": 0.9750095759869071,
+      "x_misaligned": false,
+      "excluded": {}
+    }
+  ],
+  "unmatched_model_series": [],
+  "unmatched_real_series": [],
+  "overall_nmae": 0.08791504990905862,
+  "overall_ks": 0.10667124767109704,
+  "overall_integral_l1": 1.9486973396928482,
+  "overall_x_misaligned": false,
+  "ks_scaled_by_gt_max": 0.11730305569745718,
+  "l1_scaled_by_gt_max": 2.0655577054527168,
+  "ks_scaled_by_gt_yrange": 0.16577851329453297,
+  "l1_scaled_by_gt_yrange": 2.9093832974695677,
+  "model_series_count": 3,
+  "gt_series_count": 3,
+  "notes": "mae = mean absolute y-error on overlapping x-range; nmae = mae / (ymax - ymin); bias = mean(model - gt); pearson_r = correlation of interpolated curves; ks = max |model(x) - gt(x)|; integral_l1 = \u222b |model(x) - gt(x)| dx over overlap; x_overlap_ratio = overlap length / union length; x_misaligned = True when overlap too small to trust comparison."
+}

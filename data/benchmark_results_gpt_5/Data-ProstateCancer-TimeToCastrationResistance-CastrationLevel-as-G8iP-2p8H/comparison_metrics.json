@@ -1,0 +1,18 @@
+{
+  "pairs": [],
+  "unmatched_model_series": [
+    "T \u2264 25 ng dl^-1",
+    "T > 25 ng dl^-1"
+  ],
+  "unmatched_real_series": [
+    "Testosterone>25",
+    "Testosterone<=25"
+  ],
+  "overall_nmae": NaN,
+  "overall_ks": NaN,
+  "overall_integral_l1": NaN,
+  "overall_x_misaligned": true,
+  "model_series_count": 2,
+  "gt_series_count": 2,
+  "notes": "No feasible assignment between model and GT series."
+}

@@ -1,0 +1,62 @@
+{
+  "pairs": [
+    {
+      "model_label": "series_1",
+      "real_label": "Testosterone<20",
+      "compare_mode": "interp",
+      "points_compared": 386,
+      "mae": 0.0029984739250440724,
+      "nmae": 0.27033802460125167,
+      "bias": 0.002911772045593905,
+      "pearson_r": 0.3718987762978297,
+      "ks": 0.008429095888673244,
+      "integral_l1": 0.44973176701375284,
+      "x_overlap_ratio": 0.9855621544132699,
+      "x_misaligned": false,
+      "excluded": {}
+    },
+    {
+      "model_label": "series_2",
+      "real_label": "Testosterone>50",
+      "compare_mode": "interp",
+      "points_compared": 425,
+      "mae": 0.011115938056999,
+      "nmae": 0.01615990551536367,
+      "bias": 0.007238808413385333,
+      "pearson_r": 0.9972574745825041,
+      "ks": 0.09602033980654212,
+      "integral_l1": 1.8365008636383306,
+      "x_overlap_ratio": 0.9820270520659621,
+      "x_misaligned": false,
+      "excluded": {}
+    },
+    {
+      "model_label": "series_3",
+      "real_label": "Testosterone20-50",
+      "compare_mode": "interp",
+      "points_compared": 343,
+      "mae": 0.011067956102003533,
+      "nmae": 0.01746633440472674,
+      "bias": 0.006909462057262779,
+      "pearson_r": 0.9977358596356868,
+      "ks": 0.09409222913574766,
+      "integral_l1": 1.476469279942215,
+      "x_overlap_ratio": 0.9643038402977496,
+      "x_misaligned": false,
+      "excluded": {}
+    }
+  ],
+  "unmatched_model_series": [],
+  "unmatched_real_series": [],
+  "overall_nmae": 0.10132142150711403,
+  "overall_ks": 0.06618055494365434,
+  "overall_integral_l1": 1.2542339701980996,
+  "overall_x_misaligned": false,
+  "ks_scaled_by_gt_max": 0.06797446834219288,
+  "l1_scaled_by_gt_max": 1.2881398269932458,
+  "ks_scaled_by_gt_yrange": 0.6227708136715239,
+  "l1_scaled_by_gt_yrange": 15.182335039186617,
+  "model_series_count": 3,
+  "gt_series_count": 3,
+  "notes": "mae = mean absolute y-error on overlapping x-range; nmae = mae / (ymax - ymin); bias = mean(model - gt); pearson_r = correlation of interpolated curves; ks = max |model(x) - gt(x)|; integral_l1 = \u222b |model(x) - gt(x)| dx over overlap; x_overlap_ratio = overlap length / union length; x_misaligned = True when overlap too small to trust comparison."
+}

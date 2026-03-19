@@ -1,0 +1,2 @@
+Overall survival in prostate cancer patients of rapid type who attained serum testosterone nadir of 20 ng/dl
+before 6 months (blue curve), those of slow type who attained serum testosterone nadir of 20 ng/dl after 6 months (green curve) and those in whom serum testosterone nadir of 20 ng/dl was not reached (red curve) 

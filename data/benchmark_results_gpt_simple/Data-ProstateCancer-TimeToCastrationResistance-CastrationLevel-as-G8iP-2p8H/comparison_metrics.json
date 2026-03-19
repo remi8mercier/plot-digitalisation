@@ -1,0 +1,59 @@
+{
+  "pairs": [
+    {
+      "model_label": "T \u2264 25 ng dl\u207b\u00b9",
+      "real_label": "Testosterone<=25",
+      "compare_mode": "interp",
+      "points_compared": 22,
+      "mae": 0.01913275004702155,
+      "nmae": 0.019410136432427835,
+      "bias": -0.017209217261838626,
+      "pearson_r": 0.9974847172608512,
+      "ks": 0.07819722719799385,
+      "integral_l1": 19.163635901306375,
+      "x_overlap_ratio": 0.681562947759749,
+      "x_misaligned": false,
+      "excluded": {
+        "model_left": [],
+        "model_right": [],
+        "model_nan": [],
+        "real_outside_overlap": 70
+      }
+    },
+    {
+      "model_label": "T > 25 ng dl\u207b\u00b9",
+      "real_label": "Testosterone>25",
+      "compare_mode": "interp",
+      "points_compared": 20,
+      "mae": 0.05049641913091133,
+      "nmae": 0.05131147299633251,
+      "bias": -0.043841015381355486,
+      "pearson_r": 0.9943395681055097,
+      "ks": 0.1085037609713291,
+      "integral_l1": 36.80015153822516,
+      "x_overlap_ratio": 0.9080377358490569,
+      "x_misaligned": false,
+      "excluded": {
+        "model_left": [],
+        "model_right": [
+          20
+        ],
+        "model_nan": [],
+        "real_outside_overlap": 15
+      }
+    }
+  ],
+  "unmatched_model_series": [],
+  "unmatched_real_series": [],
+  "overall_nmae": 0.035360804714380176,
+  "overall_ks": 0.09335049408466148,
+  "overall_integral_l1": 27.981893719765765,
+  "overall_x_misaligned": false,
+  "ks_scaled_by_gt_max": 0.09306504405521202,
+  "l1_scaled_by_gt_max": 27.899715375589015,
+  "ks_scaled_by_gt_yrange": 0.09380201358274014,
+  "l1_scaled_by_gt_yrange": 28.12039620174952,
+  "model_series_count": 2,
+  "gt_series_count": 2,
+  "notes": "mae = mean absolute y-error on overlapping x-range; nmae = mae / (ymax - ymin); bias = mean(model - gt); pearson_r = correlation of interpolated curves; ks = max |model(x) - gt(x)|; integral_l1 = \u222b |model(x) - gt(x)| dx over overlap; x_overlap_ratio = overlap length / union length; x_misaligned = True when overlap too small to trust comparison."
+}
